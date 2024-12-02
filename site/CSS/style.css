@@ -93,7 +93,6 @@ body {
 
 .btn-primary:hover {
     background-color: #f39a6a; /* Couleur plus foncée au survol */
-    margin-bottom: 2em;
 }
 
 .btn-secondary {
@@ -125,4 +124,20 @@ body {
 
 footer {
     color: white;
+}
+
+.mail {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #000;
+    width: 30%;
+}
+
+.mail::placeholder {
+    color: #000;
+}
+
+.mail:focus {
+    outline: none;
 }
