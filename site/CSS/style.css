@@ -1,3 +1,7 @@
+body {
+    background-color: #f2f2f2;
+}
+
 .navbar-nav .nav-link {
     font-weight: 500; /* Texte semi-gras */
     color: #000; /* Texte noir */
@@ -53,4 +57,72 @@
 
 .material-symbols-outlined:hover {
     color: #f98537; /* Couleur d'accent au survol */
+}
+
+
+
+.hero-section {
+    position: relative; /* Nécessaire pour superposer le texte */
+    height: 100em; /* L'image couvre toute la hauteur de l'écran */
+    background-image: url('../Ressources/image_acceuil.png'); /* Remplace par le chemin de ton image */
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+}
+
+
+/* Boutons orange et noir */
+
+.button-group {
+    display: flex;
+    gap: 1rem; /* Espace entre les boutons */
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #f98537; /* Couleur orange */
+    color: #000; /* Couleur du texte */
+    font-weight: bold;
+    text-decoration: none; /* Pas de soulignement */
+    border: none;
+    border-radius: 50px; /* Forme arrondie */
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f39a6a; /* Couleur plus foncée au survol */
+    margin-bottom: 2em;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    color: #000; /* Texte noir */
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #000; /* Bordure noire */
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.section {
+    margin-top: 20em;
+    margin-left: 20em;
+    margin-right: 20em;
+}
+
+.espacement-gauche {
+    margin-left: 3em;
+}
+
+.black {
+    background-color: rgb(31 31 31);
+}
+
+footer {
+    color: white;
 }
