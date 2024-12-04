@@ -10,8 +10,9 @@
         />
 
         <!-- Bootstrap CSS v5.2.1 -->
+         <link rel="shortcut icon" href="../Ressources/logo-flavicon.svg" type="image/x-icon">
         <link rel="stylesheet" href="../CSS/style.css">
-
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -23,119 +24,243 @@
     <body>
         <header>
             <!-- place navbar here -->
-        </header>
-        <main>
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                        aria-label="slide une"
-                    ></li>
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="1"
-                        aria-label="slide deux"
-                    ></li>
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="2"
-                        aria-label="slide trois"
-                    ></li>
-                    <li
-                    data-bs-target="#carouselId"
-                    data-bs-slide-to="3"
-                    aria-label="slide quatre"
-                    ></li>
-                    <li
-                    data-bs-target="#carouselId"
-                    data-bs-slide-to="4"
-                    aria-label="slide cinq"
-                    ></li>
-                    <li
-                    data-bs-target="#carouselId"
-                    data-bs-slide-to="5"
-                    aria-label="slide six"
-                    ></li>
-                    <li
-                    data-bs-target="#carouselId"
-                    data-bs-slide-to="6"
-                    aria-label="slide sept"
-                    ></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img
-                            src="../Ressources/image_9.png"
-                            class="w-100 d-block"
-                            alt="First slide"
-                        />
-
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            src="../Ressources/image_10.png"
-                            class="w-100 d-block"
-                            alt="Second slide"
-                        />
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            src="../Ressources/image_11.png"
-                            class="w-100 d-block"
-                            alt="Third slide"
-                        />
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            src="../Ressources/image_12.png"
-                            class="w-100 d-block"
-                            alt="Third slide"
-                        />
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            src="../Ressources/image_13.png"
-                            class="w-100 d-block"
-                            alt="Third slide"
-                        />
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            src="../Ressources/image_14.png"
-                            class="w-100 d-block"
-                            alt="Third slide"
-                        />
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            src="../Ressources/image_15.png"
-                            class="w-100 d-block"
-                            alt="Third slide"
-                        />
+            <nav class="navbar navbar-expand-lg bg-white border-bottom py-3 px-4 fixed-top">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                        <img src="../Ressources/logo_PRAMK_noir.png" alt="Logo de PRAMK" width="10%">
+                </div>
+                <div>
+                    <p>Montant estimé</p>
+                    <p>1 029,00€</p>
+                </div>
+                <div class="mt-4">
+                    <div class="button-group">
+                        <span class="material-symbols-outlined survol-orange">info</span>
+                        <a href="#" class="btn-primary">Ajouter au panier</a>
+                        <span class="material-symbols-outlined survol-orange">close</span>
                     </div>
                 </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide="prev"
-                >
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide="next"
-                >
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
+            </nav>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col fixed-left"> <!-- Partie Gauche -->
+                    <div id="carouselExampleIndicators" class="carousel slide espacement-navbar-2" data-bs-theme="dark" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../Ressources/image_9.png" class="d-block w-100 h-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../Ressources/image_10.png" class="d-block w-100 h-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../Ressources/image_11.png" class="d-block w-100 h-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../Ressources/image_12.png" class="d-block w-100 h-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../Ressources/image_13.png" class="d-block w-100 h-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../Ressources/image_14.png" class="d-block w-100 h-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../Ressources/image_15.png" class="d-block w-100 h-80" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+                <div class="col partie-droite"> <!-- Partie droite -->
+                    <div class="espacement-navbar">
+                        <div class="presentation">
+                            <div>
+                                <h1> PRAMK Laptop 13 </h1>
+                                <p> PRAMK Laptop 13 DIY Edition (Intel® Core™ Ultra Series 1) </p>
+                            </div>
+                            <div class="row px-3 pe-5 pb-4 affichage-config ">
+                                <button type="button" class="col button-choix rounded-left">
+                                    <h5>DIY Edition</h5>
+                                    <p>Construisez-les vous-même et apportez votre système d'exploitation, y compris Linux.</p>
+                                </button>
+                                <button type="button" class="col rounded">
+                                    <h5>Pre-built</h5>
+                                    <p>Prêt à l'emploi avec Windows préinstallé.</p>
+                                </button>
+                            </div>
+
+                            <div class="row px-3 pe-5 pb-4 affichage-config">
+                                <button type="button" class="col button-choix rounded">
+                                    <h5>Intel® Core™</h5>
+                                </button>
+                                <button type="button" class="col rounded">
+                                    <h5>AMD Ryzen™</h5>
+                                </button>
+                            </div>
+
+                            <div class="row px-3 pe-4 me-2 affichage-config">
+                                <button type="button" class="col-3 me-1 button-choix rounded">
+                                    <img src="../Ressources/image_10.png" width="100%" alt="">
+                                    <h6 style="margin-top: 10%;">Ultra Series 1</h6>
+                                    <p>A partir de</p>
+                                    <p>1 029,00€</p>
+                                </button>
+                                <button type="button" class="col-3 rounded">
+                                    <p class="reduc">7% Off</p>
+                                    <img src="../Ressources/image 30.png" width="100%" alt="">
+                                    <h6>13th Gen</h6>
+                                    <p>A partir de</p>
+                                    <p>909,00€</p>
+                                    <p>was: <span class="prix-reduit">979€</span></p>
+                                </button>
+                                <div class="pt-5 mb-5">
+                                    <p>Voir les détails du Produit <span class="material-symbols-outlined survol-orange">open_in_new</span></p>
+                                    <p>Commander plus d'un ordinateur portable ? <span class="material-symbols-outlined survol-orange">info</span></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="configuration ">
+                            <h1>Configuration</h1>
+                            <div>
+                                <div class="border-top">
+                                    <div class="row">
+                                        <div class="col-11">                                        
+                                            <h3 class="mt-4">Système</h3>
+                                            <p>Choisissez une option</p>
+                                        </div>
+                                        <div class="col-1">
+                                            <span class="material-symbols-outlined">keyboard_arrow_up</span>
+                                        </div>
+                                    </div>    
+                                    <div class="list-group gap-3">
+                                        <a href="#" class="list-group-item list-group-item-action active border rounded" aria-current="true">
+                                          <div class="d-flex w-100 justify-content-between border-bottom">
+                                            <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Ultra 5 125H</h5>
+                                            <h5 style="font-weight: lighter;">1 029€</h5>
+                                          </div>
+                                          <div class="ps-2 py-3">
+                                            <p class="mb-1 pb-1">Jusqu’à 4.5GHz, 4+8 cœurs.</p>
+                                            <small><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
+                                          </div>
+
+                                        </a>
+
+                                        <a href="#" class="list-group-item list-group-item-action border rounded">
+                                          <div class="d-flex w-100 justify-content-between border-bottom">
+                                            <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Ultra 7 155H</h5>
+                                            <h5 style="font-weight: lighter;">1 429€</h5>
+                                          </div>
+                                          <div class="ps-2 py-3">
+                                            <p class="mb-1">Jusqu’à 4.8GHz, 6+8 cœurs.</p>
+                                            <small class="text-muted"><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
+                                          </div>
+                                          
+                                        </a>
+
+                                        <a href="#" class="list-group-item list-group-item-action border rounded">
+                                          <div class="d-flex w-100 justify-content-between border-bottom">
+                                            <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Ultra 7 165H</h5>
+                                            <h5 style="font-weight: lighter;">1 909€</h5>
+                                          </div>
+                                          <div class="ps-2 py-3">
+                                            <p class="mb-1">Jusqu’à 5.0GHz, 6+8 cœurs.</p>
+                                            <small class="text-muted"><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
+                                          </div>
+                                          
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3></h3>
+                                </div>
+                                <div>
+                                    <h3></h3>
+                                </div>
+                                <div>
+                                    <h3></h3>
+                                </div>
+                                <div>
+                                    <h3></h3>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="border-top">
+                                    <div class="row">
+                                        <div class="col-11">                                        
+                                            <h3 class="mt-4">Affichage</h3>
+                                            <p>Choisissez une option</p>
+                                        </div>
+                                        <div class="col-1">
+                                            <span class="material-symbols-outlined">keyboard_arrow_up</span>
+                                        </div>
+                                    </div>    
+                                    <div class="list-group gap-3">
+                                        <a href="#" class="list-group-item list-group-item-action active border rounded" aria-current="true">
+                                          <div class="d-flex w-100 justify-content-between border-bottom">
+                                            <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Écran Mat</h5>
+                                            <h5 style="font-weight: lighter;">1 029€</h5>
+                                          </div>
+                                          <div class="ps-2 py-3">
+                                            <p class="mb-1 pb-1"> 13.5” 2256 x 1504 60Hz écran matte.</p>
+                                            <small><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
+                                          </div>
+
+                                        </a>
+
+                                        <a href="#" class="list-group-item list-group-item-action border rounded">
+                                          <div class="d-flex w-100 justify-content-between border-bottom">
+                                            <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Écran 2.8K</h5>
+                                          </div>
+                                          <div class="ps-2 py-3">
+                                            <p class="mb-1">13.5” 2880 x 1920 120Hz matte display (Note : Écran tactile.)</p>
+                                            <small class="text-muted"><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
+                                          </div>
+                                          
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3></h3>
+                                </div>
+                                <div>
+                                    <h3></h3>
+                                </div>
+                                <div>
+                                    <h3></h3>
+                                </div>
+                                <div>
+                                    <h3></h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
             </div>
+            
             
         </main>
         <footer>
