@@ -72,12 +72,6 @@ body {
 
 
 /* Boutons orange et noir */
-
-.button-group {
-    display: flex;
-    gap: 1rem; /* Espace entre les boutons */
-}
-
 .btn-primary {
     display: inline-block;
     padding: 0.8rem 1.5rem;
@@ -115,7 +109,7 @@ body {
 }
 
 .espacement-gauche {
-    margin-left: 3em;
+    margin-left: 10rem;
 }
 
 .black {
@@ -140,4 +134,33 @@ footer {
 
 .mail:focus {
     outline: none;
+}
+
+.espace {
+    margin-top: 20em;
+}
+
+.ecriture {
+    font-size: 0.75vw;
+}
+
+.esp-ecriture {
+    margin-left: 20em;
+    margin-right: 20em;
+}
+
+.card-laptop {
+    background-color: rgb(207, 207, 207);
+    border-radius: 30px;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.ptit-espace {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.espace-top {
+    margin-top: 10em;
 }
