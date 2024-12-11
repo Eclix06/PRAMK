@@ -4,6 +4,10 @@ body {
     overflow-x: hidden;
 }
 
+.nav {
+    width: 100%;
+}
+
 .navbar-nav .nav-link {
     font-weight: 500; /* Texte semi-gras */
     color: #000; /* Texte noir */
@@ -205,6 +209,7 @@ h6 {
     padding-top: 3em;
 }
 }
+
 @media screen and (max-width: 1023px) {
     body {
         background-color: white;
@@ -218,5 +223,43 @@ h6 {
         background-size: cover; /* L'image couvre tout l'écran */
         background-position: center; /* Centre l'image */
         background-repeat: no-repeat; /* Évite la répétition de l'image */
+    }
+}
+
+@media screen and (max-width: 1489px) {
+    body {
+        background-color: white;
+        overflow-x: hidden;
+    }
+
+    .logo-centered {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 190px;
+    }
+
+    .navbar-collapse {
+        display: none !important; /* Cache le menu principal */
+    }
+
+    .navbar-toggler {
+        display: block !important; /* Affiche le bouton hamburger */
+    }
+}
+
+@media screen and (min-width: 1490px) {
+    .navbar-collapse {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        display: inline-block;
     }
 }
