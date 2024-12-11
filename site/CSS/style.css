@@ -181,12 +181,12 @@ h6 {
 }
 
 .ecriture {
-    font-size: 0.75vw;
+    font-size: 1rem;
 }
 
 .esp-ecriture {
-    margin-left: 20em;
-    margin-right: 20em;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .card-laptop {
@@ -208,12 +208,27 @@ h6 {
 .ptit-espace-top {
     padding-top: 3em;
 }
+
+.petit {
+    display: none;
+}
+
+.grand {
+    display: block;
+}
 }
 
 @media screen and (max-width: 1023px) {
     body {
         background-color: white;
         overflow-x: hidden;
+    }
+
+    .card-laptop {
+        background-color: rgb(207, 207, 207);
+        border-radius: 30px;
+        padding-left: 4em;
+        padding-right: 4em;
     }
 
     .hero-section {
@@ -224,6 +239,61 @@ h6 {
         background-position: center; /* Centre l'image */
         background-repeat: no-repeat; /* Évite la répétition de l'image */
     }
+
+    .petit {
+        display: block;
+        position: absolute;
+        top: 70%;
+    }
+
+    .grand {
+        display: none;
+    }
+
+    .espace {
+        margin-top: 10em;
+        margin-bottom: 10em;
+    }
+
+    .ecriture {
+        font-size: 1rem;
+    }
+    
+    .esp-ecriture {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    /* Boutons orange et noir */
+.btn-primary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #f98537; /* Couleur orange */
+    color: #000; /* Couleur du texte */
+    font-weight: bold;
+    text-decoration: none; /* Pas de soulignement */
+    border: none;
+    border-radius: 50px; /* Forme arrondie */
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f39a6a; /* Couleur plus foncée au survol */
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    color: #000; /* Texte noir */
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #000; /* Bordure noire */
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 }
 
 @media screen and (max-width: 1489px) {
@@ -248,12 +318,22 @@ h6 {
     }
 }
 
-@media (min-width: 1490px) {
+@media screen and (min-width: 1490px) {
     .offcanvas- {
         display: none;
     }
 
     .navbar- {
         display: block;
+    }
+}
+
+@media screen and (max-width: 1980px) {
+    .card-ordi {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        gap: 5em;
     }
 }
