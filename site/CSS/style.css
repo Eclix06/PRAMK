@@ -224,6 +224,10 @@ h6 {
         overflow-x: hidden;
     }
 
+    .black {
+        background-color: rgb(31 31 31);
+    }
+
     .card-laptop {
         background-color: rgb(207, 207, 207);
         border-radius: 30px;
@@ -263,6 +267,23 @@ h6 {
         margin-left: 20%;
         margin-right: 20%;
     }
+
+    .mail {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: #000;
+        width: 30%;
+    }
+    
+    .mail::placeholder {
+        color: #000;
+    }
+    
+    .mail:focus {
+        outline: none;
+    }
+    
 
     /* Boutons orange et noir */
 .btn-primary {
@@ -335,5 +356,21 @@ h6 {
         align-content: center;
         flex-direction: column;
         gap: 5em;
+        margin-right: 10% !important;
+        margin-left: 10% !important;
+        min-width: 1120px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .card-ordi {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        gap: 5em;
+        margin-right: 5% !important;
+        margin-left: 5% !important;
+        min-width: 1120px;
     }
 }
