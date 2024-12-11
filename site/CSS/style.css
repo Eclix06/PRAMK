@@ -337,3 +337,8 @@ h6 {
         gap: 5em;
     }
 }
+
+.boite-modele {
+    text-decoration: none;
+    color: #000;
+}
