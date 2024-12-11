@@ -239,27 +239,21 @@ h6 {
         width: 190px;
     }
 
-    .navbar-collapse {
-        display: none !important; /* Cache le menu principal */
+    .offcanvas- {
+        display: block;
     }
 
-    .navbar-toggler {
-        display: block !important; /* Affiche le bouton hamburger */
+    .navbar- {
+        display: none;
     }
 }
 
-@media screen and (min-width: 1490px) {
-    .navbar-collapse {
-        display: flex !important;
-        justify-content: center;
+@media (min-width: 1490px) {
+    .offcanvas- {
+        display: none;
     }
 
-    .navbar-nav {
-        display: flex;
-        align-items: center;
-    }
-
-    .navbar-nav .nav-item {
-        display: inline-block;
+    .navbar- {
+        display: block;
     }
 }
