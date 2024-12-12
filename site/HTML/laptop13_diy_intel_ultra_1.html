@@ -166,7 +166,7 @@
                                                     <p>Choisissez une option</p>
                                                 </div>
                                                 <div class="col-1">
-                                                    <span class="material-symbols-outlined  pt-4 mt-3">keyboard_arrow_up</span>
+                                                    <span class="material-symbols-outlined pt-4 mt-3">keyboard_arrow_up</span>
                                                 </div>
                                             </div>    
                                             <div class="list-group gap-3" data-group="group1">
@@ -673,228 +673,282 @@
                                                     Chaque carte peut être utilisée dans l'une des 4 baies d'extension du PRAMK Laptop 13.  
                                                     Nous vous conseillons de commander au moins 4 cartes, dont au moins une carte USB-C pour charger le Laptop.
                                                 </p>
-                                                <div class="border rounded bg-white px-3 py-3">
-                                                    <h5>Most popular expansion cards bundle</h5>
-                                                    <img src="../Ressources/Group 6.png" style="width: 25%;" alt="">
-                                                    <p>2x USB-C (Aluminum), USB-A, HDMI (3rd Gen)</p>
-                                                    <li class="btn-primary">Quick select</li>
+                                                <div class="pb-5">
+                                                    <!-- Most popular expansion cards bundle -->
+                                                    <div class="border rounded bg-white px-3 py-3">
+                                                        <h5>Most popular expansion cards bundle</h5>
+                                                        <img src="../Ressources/Group 6.png" style="width: 25%;" alt="">
+                                                        <p>2x USB-C (Aluminum), USB-A, HDMI (3rd Gen)</p>
+                                                        <button class="btn btn-primary" onclick="quickSelectBundle()">Quick select</button>
+                                                    </div>
+                                                </div>
+                                                <div class="border-top pb-5">
+                                                    <!-- USB-C Expansion Cards -->
+                                                    <h5 class="mt-4">USB-C Expansion Cards (multiple colors available)</h5>
+                                                    <div class="list-group gap-3">
+                                                        <!-- USB-C (Aluminum) -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1">
+                                                                    <img src="../Ressources/illustration_usb-c.png" style="width: 12%;" alt=""> USB-C (Aluminum)
+                                                                </h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite select" style="background-color: #f2f2f2;" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+10 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                
+                                                        <!-- USB-C (Orange) -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1">
+                                                                    <img src="../Ressources/orange.png" style="width: 12%;" alt=""> USB-C (Orange)
+                                                                </h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" style="background-color: #f2f2f2;" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+10 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                
+                                                        <!-- USB-C (Lavender) -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1">
+                                                                    <img src="../Ressources/lavender.png" style="width: 12%;" alt=""> USB-C (Lavender)
+                                                                </h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" style="background-color: #f2f2f2;" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+10 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                
+                                                        <!-- USB-C (Green) -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1">
+                                                                    <img src="../Ressources/vert.png" style="width: 12%;" alt=""> USB-C (Green)
+                                                                </h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" style="background-color: #f2f2f2;" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+10 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                
+                                                        <!-- USB-C (Red) -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1">
+                                                                    <img src="../Ressources/rouge.png" style="width: 12%;" alt=""> USB-C (Red)
+                                                                </h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" style="background-color: #f2f2f2;" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+10 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="border-top pb-5">
+                                                    <!-- Additional Port Expansion Cards -->
+                                                    <h5 class="mt-4">Additional Port Expansion Cards</h5>
+                                                    <div class="list-group gap-3">
+                                                        <!-- USB-A -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1"><img src="../Ressources/illustration_USB-A.png" style="width: 12%;" alt=""> USB-A</h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" style="background-color: #f2f2f2;" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+10 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                
+                                                        <!-- HDMI (3rd Gen) -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1"><img src="../Ressources/illustration_HDMI_(3rd Gen).png" style="width: 12%;" alt=""> HDMI (3rd Gen)</h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" style="background-color: #f2f2f2;" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+20 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                
+                                                        <!-- Ethernet Expansion Card -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1"><img src="../Ressources/illustration_Ethernet_Expansion_Card.png" style="width: 12%;" alt=""> Ethernet Expansion Card</h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" style="background-color: #f2f2f2;" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+45 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                
+                                                        <!-- DisplayPort (2nd Gen) -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1"><img src="../Ressources/illustration_DisplayPort_(2nd Gen).png" style="width: 12%;" alt=""> DisplayPort (2nd Gen)</h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" style="background-color: #f2f2f2;" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+20 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                
+                                                        <!-- MicroSD Expansion Card -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1"><img src="../Ressources/microsd.png" style="width: 12%;" alt=""> MicroSD Expansion Card</h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" style="background-color: #f2f2f2;" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+20 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                
+                                                        <!-- SD -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1"><img src="../Ressources/sd.png" style="width: 12%;" alt=""> SD</h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" style="background-color: #f2f2f2;" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+29 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                    </div>
                                                 </div>
 
-                                            </div>
-                                            <h5>USB-C Expansion Cards (multiple colors available)</h5>
-                                            <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><img src="../Ressources/illustration_usb-c.png" style="width: 12%;" alt=""> USB-C (Aluminum) </h5>
-                                                    <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                        <option value="1">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                    </select>
-                                                    <h5 style="font-weight: lighter;">+10 €</h5>
-                                                  </div>
-                                                  <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><img src="../Ressources/orange.png" style="width: 12%;" alt=""> USB-C (Orange) </h5>
-                                                    <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                        <option value="1">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                    </select>
-                                                    <h5 style="font-weight: lighter;">+10 €</h5>
-                                                  </div>
-                                                  <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><img src="../Ressources/lavender.png" style="width: 12%;" alt=""> USB-C (Lavender) </h5>
-                                                    <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                        <option value="1">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                    </select>
-                                                    <h5 style="font-weight: lighter;">+10 €</h5>
-                                                  </div>
-                                                  <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action  border rounded" aria-current="true">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                        <h5 class="mb-1"><img src="../Ressources/vert.png" style="width: 12%;" alt=""> USB-C (Green) </h5>
-                                                        <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                            <option value="1">0</option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                        </select>
-                                                        <h5 style="font-weight: lighter;">+10 €</h5>
-                                                    </div>
-                                                    <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>  
-                                                  </li>
-          
-                                                  <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                        <h5 class="mb-1"><img src="../Ressources/rouge.png" style="width: 12%;" alt=""> USB-C (Red) </h5>
-                                                        <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                            <option value="1">0</option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                        </select>
-                                                      <h5 style="font-weight: lighter;">+10 €</h5>
-                                                    </div>
-                                                    <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>  
-                                                </li>
-                                            </div>
-                                        </div>
-        
-                                        <div class="border-top"> <!--  Additional Port  -->                                    
-                                            <h5 class="mt-4">Additional Port Expansion Cards</h5>
-                                            <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><img src="../Ressources/illustration_USB-A.png" style="width: 12%;" alt=""> USB-A </h5>
-                                                    <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                        <option value="1">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                    </select>
-                                                    <h5 style="font-weight: lighter;">+10 €</h5>
-                                                  </div>
-                                                  <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><img src="../Ressources/illustration_HDMI_(3rd Gen).png" style="width: 12%;" alt=""> HDMI (3rd Gen) </h5>
-                                                    <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                        <option value="1">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                    </select>
-                                                    <h5 style="font-weight: lighter;">+20 €</h5>
-                                                  </div>
-                                                  <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><img src="../Ressources/illustration_Ethernet_Expansion_Card.png" style="width: 12%;" alt=""> Ethernet Expansion Card </h5>
-                                                    <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                        <option value="1">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                    </select>
-                                                    <h5 style="font-weight: lighter;">+45 €</h5>
-                                                  </div>
-                                                  <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action  border rounded" aria-current="true">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                        <h5 class="mb-1"><img src="../Ressources/illustration_DisplayPort_(2nd Gen).png" style="width: 12%;" alt=""> DisplayPort (2nd Gen) </h5>
-                                                        <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                            <option value="1">0</option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                        </select>
-                                                        <h5 style="font-weight: lighter;">+20 €</h5>
-                                                    </div>
-                                                    <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>  
-                                                </li>
-          
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                        <h5 class="mb-1"><img src="../Ressources/" style="width: 12%;" alt=""> MicroSD Expansion Card </h5>
-                                                        <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                            <option value="1">0</option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                        </select>
-                                                      <h5 style="font-weight: lighter;">+20 €</h5>
-                                                    </div>
-                                                    <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>  
-                                                </li>
-
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                        <h5 class="mb-1"><img src="../Ressources/" style="width: 12%;" alt=""> SD </h5>
-                                                        <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                          <option value="1">0</option>
-                                                          <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                        </select>
-                                                      <h5 style="font-weight: lighter;">+29 €</h5>
-                                                    </div>
-                                                    <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>  
-                                                </li>
-                                            </div>
-                                        </div>
-        
-                                        <div class="border-top">  <!--  Storage Expansion Cards  -->
-                                            <div class="row">
-                                                <div class="col-11">                                        
+                                                <div class="border-top">
+                                                    <!-- Storage Expansion Cards -->
                                                     <h5 class="mt-4">Storage Expansion Cards</h5>
-                                                    <p>Choisissez une option</p>
+                                                    <div class="list-group gap-3">
+                                                        <!-- 250GB (2nd Gen) -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1"><img src="../Ressources/storage_250gb.png" style="width: 12%;" alt=""> 250GB (2nd Gen)</h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+50 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                
+                                                        <!-- 1TB (2nd Gen) -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1"><img src="../Ressources/storage_1tb.png" style="width: 12%;" alt=""> 1TB (2nd Gen)</h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+140 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                
+                                                        <!-- 2TB (2nd Gen) -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1"><img src="../Ressources/storage_2tb.png" style="width: 12%;" alt=""> 2TB (2nd Gen)</h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+240 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                
+                                                        <!-- 4TB (2nd Gen) -->
+                                                        <li class="list-group-item list-group-item-action border rounded">
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <h5 class="mb-1"><img src="../Ressources/storage_4tb.png" style="width: 12%;" alt=""> 4TB (2nd Gen)</h5>
+                                                                <select name="quantite" class="rounded px-2 selection-quantite" onchange="updateActiveState(this)">
+                                                                    <option value="0">0</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                </select>
+                                                                <h5 style="font-weight: lighter;">+450 €</h5>
+                                                            </div>
+                                                            <p><span class="material-symbols-outlined selection-info">info</span><u>Détails</u></p>
+                                                        </li>
+                                                    </div>
                                                 </div>
-                                                <div class="col-1">
-                                                    <span class="material-symbols-outlined pt-4 mt-3">keyboard_arrow_up</span>
-                                                </div>
-                                            </div>    
-                                            <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> 250GB (2nd Gen) </h5>
-                                                    <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                        <option value="1">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                    </select>
-                                                    <h5 style="font-weight: lighter;">+50 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> 1TB (2nd Gen) </h5>
-                                                    <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                        <option value="1">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                    </select>
-                                                    <h5 style="font-weight: lighter;">+140 €</h5>
-                                                  </div>
-                                                </li>
-                                            </div>
-                                        </div>
 
                                         <div class="text-center py-5"> <!--  fin de page  -->
                                             <li class="btn-primary w-100">Ajouter au panier</li>
