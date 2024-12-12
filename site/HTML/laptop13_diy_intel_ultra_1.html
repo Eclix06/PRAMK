@@ -22,6 +22,8 @@
     </head>
 
     <body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="../javascript/scriptjs.js"></script>
         <header>
             <!-- navbar -->
             <nav class="navbar navbar-light bg-white border-bottom fixed-top">
@@ -105,7 +107,6 @@
 
                 <div class="col partie-droite"> <!-- Partie droite -->
                     <div class="row pt-5">
-
                         <div>
                             <div class="espacement-navbar">
                                 <div class="presentation">
@@ -168,409 +169,491 @@
                                                     <span class="material-symbols-outlined  pt-4 mt-3">keyboard_arrow_up</span>
                                                 </div>
                                             </div>    
-                                            <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
-                                                  <div class="d-flex w-100 justify-content-between border-bottom">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Ultra 5 125H</h5>
-                                                    <h5 style="font-weight: lighter;">1 029€</h5>
-                                                  </div>
-                                                  <div class="ps-2 py-3">
-                                                    <p class="mb-1 pb-1">Jusqu’à 4.5GHz, 4+8 cœurs.</p>
-                                                    <small><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
-                                                  </div>
-        
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between border-bottom">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Ultra 7 155H</h5>
-                                                    <h5 style="font-weight: lighter;">1 429€</h5>
-                                                  </div>
-                                                  <div class="ps-2 py-3">
-                                                    <p class="mb-1">Jusqu’à 4.8GHz, 6+8 cœurs.</p>
-                                                    <small class="text-muted"><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
-                                                  </div>
-                                                  
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between border-bottom">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Ultra 7 165H</h5>
-                                                    <h5 style="font-weight: lighter;">1 909€</h5>
-                                                  </div>
-                                                  <div class="ps-2 py-3">
-                                                    <p class="mb-1">Jusqu’à 5.0GHz, 6+8 cœurs.</p>
-                                                    <small class="text-muted"><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
-                                                  </div>
-                                                  
-                                                </li>
+                                            <div class="list-group gap-3" data-group="group1">
+                                              <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                <div class="d-flex w-100 justify-content-between border-bottom">
+                                                  <h5 class="mb-1">
+                                                    <input type="radio" name="product" id="ultra5" value="Ultra 5 125H">
+                                                    <label for="ultra5">Ultra 5 125H</label>
+                                                  </h5>
+                                                  <h5 style="font-weight: lighter;">1 029€</h5>
+                                                </div>
+                                                <div class="ps-2 py-3">
+                                                  <p class="mb-1 pb-1">Jusqu’à 4.5GHz, 4+8 cœurs.</p>
+                                                  <small><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
+                                                </div>
+                                              </li>
+                                            
+                                              <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                <div class="d-flex w-100 justify-content-between border-bottom">
+                                                  <h5 class="mb-1">
+                                                    <input type="radio" name="product" id="ultra7-155h" value="Ultra 7 155H">
+                                                    <label for="ultra7-155h">Ultra 7 155H</label>
+                                                  </h5>
+                                                  <h5 style="font-weight: lighter;">1 429€</h5>
+                                                </div>
+                                                <div class="ps-2 py-3">
+                                                  <p class="mb-1">Jusqu’à 4.8GHz, 6+8 cœurs.</p>
+                                                  <small><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
+                                                </div>
+                                              </li>
+                                            
+                                              <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                <div class="d-flex w-100 justify-content-between border-bottom">
+                                                  <h5 class="mb-1">
+                                                    <input type="radio" name="product" id="ultra7-165h" value="Ultra 7 165H">
+                                                    <label for="ultra7-165h">Ultra 7 165H</label>
+                                                  </h5>
+                                                  <h5 style="font-weight: lighter;">1 909€</h5>
+                                                </div>
+                                                <div class="ps-2 py-3">
+                                                  <p class="mb-1">Jusqu’à 5.0GHz, 6+8 cœurs.</p>
+                                                  <small><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
+                                                </div>
+                                              </li>
                                             </div>
-                                        </div>
-                                    </div>    
         
                                     <div>
-                                        <div class="border-top"> <!--  Affichage  -->
-                                            <div class="row">
-                                                <div class="col-11">                                        
-                                                    <h3 class="mt-4">Affichage</h3>
-                                                    <p>Choisissez une option</p>
-                                                </div>
-                                                <div class="col-1">
-                                                    <span class="material-symbols-outlined  pt-4 mt-3">keyboard_arrow_up</span>
-                                                </div>
-                                            </div>    
-                                            <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
-                                                  <div class="d-flex w-100 justify-content-between border-bottom">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Écran Mat</h5>
+                                      <div class="border-top">
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <h3 class="mt-4">Affichage</h3>
+                                                <p>Choisissez une option</p>
+                                            </div>
+                                            <div class="col-1">
+                                                <span class="material-symbols-outlined pt-4 mt-3">keyboard_arrow_up</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-group gap-3" data-group="group2">
+                                            <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this, 'display-matte')">
+                                                <div class="d-flex w-100 justify-content-between border-bottom">
+                                                    <h5 class="mb-1">
+                                                        <input type="radio" name="display" id="display-matte" value="Écran Mat">
+                                                        <label for="display-matte">Écran Mat</label>
+                                                    </h5>
                                                     <h5 style="font-weight: lighter;">1 029€</h5>
-                                                  </div>
-                                                  <div class="ps-2 py-3">
-                                                    <p class="mb-1 pb-1"> 13.5” 2256 x 1504 60Hz écran matte.</p>
+                                                </div>
+                                                <div class="ps-2 py-3">
+                                                    <p class="mb-1 pb-1">13.5” 2256 x 1504 60Hz écran matte.</p>
                                                     <small><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
-                                                  </div>
-        
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between border-bottom">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Écran 2.8K</h5>
-                                                  </div>
-                                                  <div class="ps-2 py-3">
+                                                </div>
+                                            </li>
+                                
+                                            <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this, 'display-2k8')">
+                                                <div class="d-flex w-100 justify-content-between border-bottom">
+                                                    <h5 class="mb-1">
+                                                        <input type="radio" name="display" id="display-2k8" value="Écran 2.8K">
+                                                        <label for="display-2k8">Écran 2.8K</label>
+                                                    </h5>
+                                                </div>
+                                                <div class="ps-2 py-3">
                                                     <p class="mb-1">13.5” 2880 x 1920 120Hz matte display (Note : Écran tactile.)</p>
-                                                    <small class="text-muted"><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
-                                                  </div>
-                                                  
-                                                </li>
-                                            </div>
+                                                    <small><span class="material-symbols-outlined">local_shipping</span> Expédition en 1-2 semaines ouvrables.</small>
+                                                </div>
+                                            </li>
                                         </div>
                                     </div>
         
                                     <div>
-                                        <div class="border-top"> <!--  Mémoire  -->
-                                            <div class="row">
-                                                <div class="col-11">                                        
-                                                    <h3 class="mt-4">Mémoire</h3>
-                                                    <p>Choisissez une option</p>
-                                                </div>
-                                                <div class="col-1">
-                                                    <span class="material-symbols-outlined  pt-4 mt-3">keyboard_arrow_up</span>
-                                                </div>
-                                            </div>    
-                                            <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
+                                      <div class="border-top"> <!--  Mémoire  -->
+                                          <div class="row">
+                                              <div class="col-11">
+                                                  <h3 class="mt-4">Mémoire</h3>
+                                                  <p>Choisissez une option</p>
+                                              </div>
+                                              <div class="col-1">
+                                                  <span class="material-symbols-outlined pt-4 mt-3">keyboard_arrow_up</span>
+                                              </div>
+                                          </div>
+                                          <div class="list-group gap-3" data-group="group-memory">
+                                              <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                   <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> DDR5-5600 - 8GB (1 x 8GB) </h5>
-                                                    <h5 style="font-weight: lighter;">+45 €</h5>
+                                                      <h5 class="mb-1">
+                                                          <input type="radio" name="memory" id="memory-8gb" value="DDR5-5600 - 8GB (1 x 8GB)">
+                                                          <label for="memory-8gb">DDR5-5600 - 8GB (1 x 8GB)</label>
+                                                      </h5>
+                                                      <h5 style="font-weight: lighter;">+45 €</h5>
                                                   </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
+                                              </li>
+                                  
+                                              <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                   <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> DDR5-5600 - 16GB (1 x 16GB) </h5>
-                                                    <h5 style="font-weight: lighter;">+90 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> DDR5-5600 - 16GB (2 x 8GB) </h5>
+                                                      <h5 class="mb-1">
+                                                          <input type="radio" name="memory" id="memory-16gb-single" value="DDR5-5600 - 16GB (1 x 16GB)">
+                                                          <label for="memory-16gb-single">DDR5-5600 - 16GB (1 x 16GB)</label>
+                                                      </h5>
                                                       <h5 style="font-weight: lighter;">+90 €</h5>
-                                                    </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> DDR5-5600 - 32GB (1 x 32GB) </h5>
+                                                  </div>
+                                              </li>
+                                  
+                                              <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                  <div class="d-flex w-100 justify-content-between">
+                                                      <h5 class="mb-1">
+                                                          <input type="radio" name="memory" id="memory-16gb-dual" value="DDR5-5600 - 16GB (2 x 8GB)">
+                                                          <label for="memory-16gb-dual">DDR5-5600 - 16GB (2 x 8GB)</label>
+                                                      </h5>
+                                                      <h5 style="font-weight: lighter;">+90 €</h5>
+                                                  </div>
+                                              </li>
+                                  
+                                              <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                  <div class="d-flex w-100 justify-content-between">
+                                                      <h5 class="mb-1">
+                                                          <input type="radio" name="memory" id="memory-32gb-single" value="DDR5-5600 - 32GB (1 x 32GB)">
+                                                          <label for="memory-32gb-single">DDR5-5600 - 32GB (1 x 32GB)</label>
+                                                      </h5>
                                                       <h5 style="font-weight: lighter;">+180 €</h5>
-                                                    </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> DDR5-5600 - 32GB (2 x 16GB) </h5>
+                                                  </div>
+                                              </li>
+                                  
+                                              <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                  <div class="d-flex w-100 justify-content-between">
+                                                      <h5 class="mb-1">
+                                                          <input type="radio" name="memory" id="memory-32gb-dual" value="DDR5-5600 - 32GB (2 x 16GB)">
+                                                          <label for="memory-32gb-dual">DDR5-5600 - 32GB (2 x 16GB)</label>
+                                                      </h5>
                                                       <h5 style="font-weight: lighter;">+180 €</h5>
-                                                    </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> DDR5-5600 - 48GB (1 x 48GB) </h5>
+                                                  </div>
+                                              </li>
+                                  
+                                              <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                  <div class="d-flex w-100 justify-content-between">
+                                                      <h5 class="mb-1">
+                                                          <input type="radio" name="memory" id="memory-48gb" value="DDR5-5600 - 48GB (1 x 48GB)">
+                                                          <label for="memory-48gb">DDR5-5600 - 48GB (1 x 48GB)</label>
+                                                      </h5>
                                                       <h5 style="font-weight: lighter;">+270 €</h5>
-                                                    </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> DDR5-5600 - 64GB (2 x 32GB) </h5>
+                                                  </div>
+                                              </li>
+                                  
+                                              <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                  <div class="d-flex w-100 justify-content-between">
+                                                      <h5 class="mb-1">
+                                                          <input type="radio" name="memory" id="memory-64gb-dual" value="DDR5-5600 - 64GB (2 x 32GB)">
+                                                          <label for="memory-64gb-dual">DDR5-5600 - 64GB (2 x 32GB)</label>
+                                                      </h5>
                                                       <h5 style="font-weight: lighter;">+360 €</h5>
-                                                    </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> DDR5-5600 - 96GB (2 x 48GB) </h5>
+                                                  </div>
+                                              </li>
+                                  
+                                              <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                  <div class="d-flex w-100 justify-content-between">
+                                                      <h5 class="mb-1">
+                                                          <input type="radio" name="memory" id="memory-96gb-dual" value="DDR5-5600 - 96GB (2 x 48GB)">
+                                                          <label for="memory-96gb-dual">DDR5-5600 - 96GB (2 x 48GB)</label>
+                                                      </h5>
                                                       <h5 style="font-weight: lighter;">+540 €</h5>
-                                                    </div>
-                                                </li>
+                                                  </div>
+                                              </li>
+                                  
+                                              <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                  <div class="d-flex w-100 justify-content-between">
+                                                      <h5 class="mb-1">
+                                                          <input type="radio" name="memory" id="memory-none" value="Aucun (apportez le vôtre)">
+                                                          <label for="memory-none">Aucun (apportez le vôtre)</label>
+                                                      </h5>
+                                                  </div>
+                                              </li>
+                                          </div>
+                                      </div>
+                                  </div>
         
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Aucun (apportez le vôtre) </h5>
-                                                    </div>
-                                                </li>
+                                  <div>
+                                    <div class="border-top"> <!--  Stockage  -->
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <h3 class="mt-4">Stockage</h3>
+                                                <p>Choisissez une option</p>
+                                            </div>
+                                            <div class="col-1">
+                                                <span class="material-symbols-outlined pt-4 mt-3">keyboard_arrow_up</span>
                                             </div>
                                         </div>
-                                    </div>
-        
-                                    <div>
-                                        <div class="border-top">  <!--  Stockage  -->
-                                            <div class="row">
-                                                <div class="col-11">                                        
-                                                    <h3 class="mt-4">Stockage</h3>
-                                                    <p>Choisissez une option</p>
-                                                </div>
-                                                <div class="col-1">
-                                                    <span class="material-symbols-outlined  pt-4 mt-3">keyboard_arrow_up</span>
-                                                </div>
-                                            </div>    
-                                            <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> WD_BLACK™ SN770 NVME™ - M.2 2280 - 250GB </h5>
+                                        <div class="list-group gap-3" data-group="group-storage">
+                                            <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1">
+                                                        <input type="radio" name="storage" id="storage-250gb" value="WD_BLACK™ SN770 NVME™ - M.2 2280 - 250GB">
+                                                        <label for="storage-250gb">WD_BLACK™ SN770 NVME™ - M.2 2280 - 250GB</label>
+                                                    </h5>
                                                     <h5 style="font-weight: lighter;">+45 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> WD_BLACK™ SN770 NVME™ - M.2 2280 - 500GB </h5>
+                                                </div>
+                                            </li>
+                                
+                                            <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1">
+                                                        <input type="radio" name="storage" id="storage-500gb" value="WD_BLACK™ SN770 NVME™ - M.2 2280 - 500GB">
+                                                        <label for="storage-500gb">WD_BLACK™ SN770 NVME™ - M.2 2280 - 500GB</label>
+                                                    </h5>
                                                     <h5 style="font-weight: lighter;">+65 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> WD_BLACK™ SN770 NVME™ - M.2 2280 - 1TB </h5>
-                                                      <h5 style="font-weight: lighter;">+125 €</h5>
-                                                    </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> WD_BLACK™ SN850X NVME™ - M.2 2280 - 1TB </h5>
-                                                      <h5 style="font-weight: lighter;">+139 €</h5>
-                                                    </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> WD_BLACK™ SN770 NVME™ - M.2 2280 - 2TB </h5>
-                                                      <h5 style="font-weight: lighter;">+235 €</h5>
-                                                    </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> WD_BLACK™ SN850X NVME™ - M.2 2280 - 2TB </h5>
-                                                      <h5 style="font-weight: lighter;">+270 €</h5>
-                                                    </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> WD_BLACK™ SN850X NVME™ - M.2 2280 - 4TB </h5>
-                                                      <h5 style="font-weight: lighter;">+690 €</h5>
-                                                    </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Aucun (apportez le vôtre) </h5>
-                                                      <h5 style="font-weight: lighter;">-45 €</h5>
-                                                    </div>
-                                                </li>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div>
-                                        <div class="border-top"> <!--  Système d’exploitation  -->
-                                            <div class="row">
-                                                <div class="col-11">                                        
-                                                    <h3 class="mt-4">Système d’exploitation</h3>
-                                                    <p>Choisissez une option</p>
                                                 </div>
-                                                <div class="col-1">
-                                                    <span class="material-symbols-outlined  pt-4 mt-3">keyboard_arrow_up</span>
+                                            </li>
+                                
+                                            <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1">
+                                                        <input type="radio" name="storage" id="storage-1tb-770" value="WD_BLACK™ SN770 NVME™ - M.2 2280 - 1TB">
+                                                        <label for="storage-1tb-770">WD_BLACK™ SN770 NVME™ - M.2 2280 - 1TB</label>
+                                                    </h5>
+                                                    <h5 style="font-weight: lighter;">+125 €</h5>
                                                 </div>
-                                            </div>    
-                                            <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Windows 11 Home (Download) </h5>
-                                                    <h5 style="font-weight: lighter;">+145 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Windows 11 Pro (Download) </h5>
-                                                    <h5 style="font-weight: lighter;">+259 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                    <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Aucun (apportez le vôtre) </h5>
-                                                    </div>
-                                                </li>
-                                            </div>
+                                            </li>
+                                
+                                            <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1">
+                                                        <input type="radio" name="storage" id="storage-1tb-850x" value="WD_BLACK™ SN850X NVME™ - M.2 2280 - 1TB">
+                                                        <label for="storage-1tb-850x">WD_BLACK™ SN850X NVME™ - M.2 2280 - 1TB</label>
+                                                    </h5>
+                                                    <h5 style="font-weight: lighter;">+139 €</h5>
+                                                </div>
+                                            </li>
+                                
+                                            <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1">
+                                                        <input type="radio" name="storage" id="storage-2tb-770" value="WD_BLACK™ SN770 NVME™ - M.2 2280 - 2TB">
+                                                        <label for="storage-2tb-770">WD_BLACK™ SN770 NVME™ - M.2 2280 - 2TB</label>
+                                                    </h5>
+                                                    <h5 style="font-weight: lighter;">+235 €</h5>
+                                                </div>
+                                            </li>
+                                
+                                            <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1">
+                                                        <input type="radio" name="storage" id="storage-2tb-850x" value="WD_BLACK™ SN850X NVME™ - M.2 2280 - 2TB">
+                                                        <label for="storage-2tb-850x">WD_BLACK™ SN850X NVME™ - M.2 2280 - 2TB</label>
+                                                    </h5>
+                                                    <h5 style="font-weight: lighter;">+270 €</h5>
+                                                </div>
+                                            </li>
+                                
+                                            <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1">
+                                                        <input type="radio" name="storage" id="storage-4tb-850x" value="WD_BLACK™ SN850X NVME™ - M.2 2280 - 4TB">
+                                                        <label for="storage-4tb-850x">WD_BLACK™ SN850X NVME™ - M.2 2280 - 4TB</label>
+                                                    </h5>
+                                                    <h5 style="font-weight: lighter;">+690 €</h5>
+                                                </div>
+                                            </li>
+                                
+                                            <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1">
+                                                        <input type="radio" name="storage" id="storage-none" value="Aucun (apportez le vôtre)">
+                                                        <label for="storage-none">Aucun (apportez le vôtre)</label>
+                                                    </h5>
+                                                    <h5 style="font-weight: lighter;">-45 €</h5>
+                                                </div>
+                                            </li>
                                         </div>
                                     </div>
                                 </div>
+                                
+        
+                                <div>
+                                  <div class="border-top"> <!--  Système d’exploitation  -->
+                                      <div class="row">
+                                          <div class="col-11">
+                                              <h3 class="mt-4">Système d’exploitation</h3>
+                                              <p>Choisissez une option</p>
+                                          </div>
+                                          <div class="col-1">
+                                              <span class="material-symbols-outlined pt-4 mt-3">keyboard_arrow_up</span>
+                                          </div>
+                                      </div>
+                                      <div class="list-group gap-3" data-group="group-os">
+                                          <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                              <div class="d-flex w-100 justify-content-between">
+                                                  <h5 class="mb-1">
+                                                      <input type="radio" name="os" id="os-win11-home" value="Windows 11 Home (Download)">
+                                                      <label for="os-win11-home">Windows 11 Home (Download)</label>
+                                                  </h5>
+                                                  <h5 style="font-weight: lighter;">+145 €</h5>
+                                              </div>
+                                          </li>
+                              
+                                          <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                              <div class="d-flex w-100 justify-content-between">
+                                                  <h5 class="mb-1">
+                                                      <input type="radio" name="os" id="os-win11-pro" value="Windows 11 Pro (Download)">
+                                                      <label for="os-win11-pro">Windows 11 Pro (Download)</label>
+                                                  </h5>
+                                                  <h5 style="font-weight: lighter;">+259 €</h5>
+                                              </div>
+                                          </li>
+                              
+                                          <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                              <div class="d-flex w-100 justify-content-between">
+                                                  <h5 class="mb-1">
+                                                      <input type="radio" name="os" id="os-none" value="Aucun (apportez le vôtre)">
+                                                      <label for="os-none">Aucun (apportez le vôtre)</label>
+                                                  </h5>
+                                              </div>
+                                          </li>
+                                      </div>
+                                  </div>
+                              </div>
+                              
         
                                 <div class="mt-4 pt-4"> <!--  Personnalisation  -->
                                     <h1>Personnalisation</h1>
                                     <div>
-                                        <div class="border-top"> <!--  Bezel  -->
+                                        <!-- Couleurs -->
+                                        <div class="border-top">
                                             <div class="row">
-                                                <div class="col-11">                                        
-                                                    <h3 class="mt-4">Bezel</h3>
+                                                <div class="col-11">
+                                                    <h3 class="mt-4">Couleurs</h3>
                                                     <p>Choisissez une option</p>
                                                 </div>
                                                 <div class="col-1">
-                                                    <span class="material-symbols-outlined  pt-4 mt-3">keyboard_arrow_up</span>
+                                                    <span class="material-symbols-outlined pt-4 mt-3">keyboard_arrow_up</span>
                                                 </div>
-                                            </div>    
+                                            </div>
                                             <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Black </h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Gray </h5>
-                                                    <h5 style="font-weight: lighter;">+10 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Orange </h5>
-                                                    <h5 style="font-weight: lighter;">+10 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action  border rounded" aria-current="true">
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                     <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Green </h5>
-                                                      <h5 style="font-weight: lighter;">+10 €</h5>
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="color" id="color-black" value="Black">
+                                                            <label for="color-black">Black</label>
+                                                        </h5>
                                                     </div>
-                                                  </li>
-          
-                                                  <li class="list-group-item list-group-item-action border rounded">
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                     <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Lavender </h5>
-                                                      <h5 style="font-weight: lighter;">+10 €</h5>
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="color" id="color-gray" value="Gray">
+                                                            <label for="color-gray">Gray</label>
+                                                        </h5>
+                                                        <h5 style="font-weight: lighter;">+10 €</h5>
                                                     </div>
-                                                  </li>
-          
-                                                  <li class="list-group-item list-group-item-action border rounded">
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                     <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Red </h5>
-                                                      <h5 style="font-weight: lighter;">+10 €</h5>
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="color" id="color-orange" value="Orange">
+                                                            <label for="color-orange">Orange</label>
+                                                        </h5>
+                                                        <h5 style="font-weight: lighter;">+10 €</h5>
                                                     </div>
-                                                  </li>
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="color" id="color-green" value="Green">
+                                                            <label for="color-green">Green</label>
+                                                        </h5>
+                                                        <h5 style="font-weight: lighter;">+10 €</h5>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="color" id="color-lavender" value="Lavender">
+                                                            <label for="color-lavender">Lavender</label>
+                                                        </h5>
+                                                        <h5 style="font-weight: lighter;">+10 €</h5>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="color" id="color-red" value="Red">
+                                                            <label for="color-red">Red</label>
+                                                        </h5>
+                                                        <h5 style="font-weight: lighter;">+10 €</h5>
+                                                    </div>
+                                                </li>
                                             </div>
                                         </div>
-        
-                                        <div class="border-top"> <!--  Clavier  -->
+                                    
+                                        <!-- Clavier -->
+                                        <div class="border-top">
                                             <div class="row">
-                                                <div class="col-11">                                        
+                                                <div class="col-11">
                                                     <h3 class="mt-4">Clavier</h3>
                                                     <p>Choisissez une option</p>
                                                 </div>
                                                 <div class="col-1">
                                                     <span class="material-symbols-outlined pt-4 mt-3">keyboard_arrow_up</span>
                                                 </div>
-                                            </div>    
+                                            </div>
                                             <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> French </h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> German </h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Japanese </h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action  border rounded" aria-current="true">
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                     <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> US English </h5>
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="keyboard" id="keyboard-french" value="French">
+                                                            <label for="keyboard-french">French</label>
+                                                        </h5>
                                                     </div>
-                                                  </li>
-          
-                                                  <li class="list-group-item list-group-item-action border rounded">
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                     <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> British English </h5>
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="keyboard" id="keyboard-german" value="German">
+                                                            <label for="keyboard-german">German</label>
+                                                        </h5>
                                                     </div>
-                                                  </li>
-          
-                                                  <li class="list-group-item list-group-item-action border rounded">
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                     <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> International English </h5>
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="keyboard" id="keyboard-japanese" value="Japanese">
+                                                            <label for="keyboard-japanese">Japanese</label>
+                                                        </h5>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 the="mb-1">
+                                                            <input type="radio" name="keyboard" id="keyboard-us-english" value="US English">
+                                                            <label for="keyboard-us-english">US English</label>
+                                                        </h5>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="keyboard" id="keyboard-british-english" value="British English">
+                                                            <label for="keyboard-british-english">British English</label>
+                                                        </h5>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="keyboard" id="keyboard-international-english" value="International English">
+                                                            <label for="keyboard-international-english">International English</label>
+                                                        </h5>
                                                     </div>
                                                 </li>
                                             </div>
                                         </div>
-        
-                                        <div class="border-top">  <!--  Chargeur  -->
+                                    
+                                        <!-- Chargeur -->
+                                        <div class="border-top">
                                             <div class="row">
-                                                <div class="col-11">                                        
+                                                <div class="col-11">
                                                     <h3 class="mt-4">Chargeur</h3>
                                                     <p>Choisissez une option</p>
                                                 </div>
                                                 <div class="col-1">
                                                     <span class="material-symbols-outlined pt-4 mt-3">keyboard_arrow_up</span>
                                                 </div>
-                                            </div>    
-                                            <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Power Adapter - 60W - EU </h5>
-                                                    <h5 style="font-weight: lighter;">+49 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Power Adapter - 60W - UK </h5>
-                                                    <h5 style="font-weight: lighter;">+49 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Aucun (apportez le vôtre) </h5>
-        
-                                                  </div>
-                                                </li>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                            <div class="list-group gap-3">
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="charger" id="charger-60w-eu" value="Power Adapter - 60W - EU">
+                                                            <label for="charger-60w-eu">Power Adapter - 60W - EU</label>
+                                                        </h5>
+                                                        <h5 style="font-weight: lighter;">+49 €</h5>
+                                                    </div>
+                                                    </li>
         
                                 <div class="mt-4 pt-4"> <!--  Personnalisation  -->
                                     <h1>Cartes d'extension</h1>
@@ -604,6 +687,7 @@
                                                   <div class="d-flex w-100 justify-content-between">
                                                     <h5 class="mb-1"><img src="../Ressources/illustration_usb-c.png" style="width: 12%;" alt=""> USB-C (Aluminum) </h5>
                                                     <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
+                                                        <option value="1">0</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
@@ -618,6 +702,7 @@
                                                   <div class="d-flex w-100 justify-content-between">
                                                     <h5 class="mb-1"><img src="../Ressources/orange.png" style="width: 12%;" alt=""> USB-C (Orange) </h5>
                                                     <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
+                                                        <option value="1">0</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
@@ -632,6 +717,7 @@
                                                   <div class="d-flex w-100 justify-content-between">
                                                     <h5 class="mb-1"><img src="../Ressources/lavender.png" style="width: 12%;" alt=""> USB-C (Lavender) </h5>
                                                     <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
+                                                        <option value="1">0</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
@@ -646,6 +732,7 @@
                                                     <div class="d-flex w-100 justify-content-between">
                                                         <h5 class="mb-1"><img src="../Ressources/vert.png" style="width: 12%;" alt=""> USB-C (Green) </h5>
                                                         <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
+                                                            <option value="1">0</option>
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>
                                                             <option value="3">3</option>
@@ -660,6 +747,7 @@
                                                     <div class="d-flex w-100 justify-content-between">
                                                         <h5 class="mb-1"><img src="../Ressources/rouge.png" style="width: 12%;" alt=""> USB-C (Red) </h5>
                                                         <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
+                                                            <option value="1">0</option>
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>
                                                             <option value="3">3</option>
@@ -679,6 +767,7 @@
                                                   <div class="d-flex w-100 justify-content-between">
                                                     <h5 class="mb-1"><img src="../Ressources/illustration_USB-A.png" style="width: 12%;" alt=""> USB-A </h5>
                                                     <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
+                                                        <option value="1">0</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
@@ -693,6 +782,7 @@
                                                   <div class="d-flex w-100 justify-content-between">
                                                     <h5 class="mb-1"><img src="../Ressources/illustration_HDMI_(3rd Gen).png" style="width: 12%;" alt=""> HDMI (3rd Gen) </h5>
                                                     <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
+                                                        <option value="1">0</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
@@ -707,6 +797,7 @@
                                                   <div class="d-flex w-100 justify-content-between">
                                                     <h5 class="mb-1"><img src="../Ressources/illustration_Ethernet_Expansion_Card.png" style="width: 12%;" alt=""> Ethernet Expansion Card </h5>
                                                     <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
+                                                        <option value="1">0</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
@@ -721,6 +812,7 @@
                                                     <div class="d-flex w-100 justify-content-between">
                                                         <h5 class="mb-1"><img src="../Ressources/illustration_DisplayPort_(2nd Gen).png" style="width: 12%;" alt=""> DisplayPort (2nd Gen) </h5>
                                                         <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
+                                                            <option value="1">0</option>
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>
                                                             <option value="3">3</option>
@@ -735,6 +827,7 @@
                                                     <div class="d-flex w-100 justify-content-between">
                                                         <h5 class="mb-1"><img src="../Ressources/" style="width: 12%;" alt=""> MicroSD Expansion Card </h5>
                                                         <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
+                                                            <option value="1">0</option>
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>
                                                             <option value="3">3</option>
@@ -749,7 +842,8 @@
                                                     <div class="d-flex w-100 justify-content-between">
                                                         <h5 class="mb-1"><img src="../Ressources/" style="width: 12%;" alt=""> SD </h5>
                                                         <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
-                                                            <option value="1">1</option>
+                                                          <option value="1">0</option>
+                                                          <option value="1">1</option>
                                                             <option value="2">2</option>
                                                             <option value="3">3</option>
                                                             <option value="4">4</option>
@@ -776,6 +870,7 @@
                                                   <div class="d-flex w-100 justify-content-between">
                                                     <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> 250GB (2nd Gen) </h5>
                                                     <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
+                                                        <option value="1">0</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
@@ -789,6 +884,7 @@
                                                   <div class="d-flex w-100 justify-content-between">
                                                     <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> 1TB (2nd Gen) </h5>
                                                     <select name="quantite" id="selection-quantite" class="rounded px-2" style="background-color:  f2f2f2;">
+                                                        <option value="1">0</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
