@@ -489,144 +489,158 @@
                                 <div class="mt-4 pt-4"> <!--  Personnalisation  -->
                                     <h1>Personnalisation</h1>
                                     <div>
-                                        <div class="border-top"> <!--  Bezel  -->
+                                        <!-- Couleurs -->
+                                        <div class="border-top">
                                             <div class="row">
-                                                <div class="col-11">                                        
-                                                    <h3 class="mt-4">Bezel</h3>
+                                                <div class="col-11">
+                                                    <h3 class="mt-4">Couleurs</h3>
                                                     <p>Choisissez une option</p>
                                                 </div>
                                                 <div class="col-1">
-                                                    <span class="material-symbols-outlined  pt-4 mt-3">keyboard_arrow_up</span>
+                                                    <span class="material-symbols-outlined pt-4 mt-3">keyboard_arrow_up</span>
                                                 </div>
-                                            </div>    
+                                            </div>
                                             <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Black </h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Gray </h5>
-                                                    <h5 style="font-weight: lighter;">+10 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Orange </h5>
-                                                    <h5 style="font-weight: lighter;">+10 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action  border rounded" aria-current="true">
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                     <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Green </h5>
-                                                      <h5 style="font-weight: lighter;">+10 €</h5>
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="color" id="color-black" value="Black">
+                                                            <label for="color-black">Black</label>
+                                                        </h5>
                                                     </div>
-                                                  </li>
-          
-                                                  <li class="list-group-item list-group-item-action border rounded">
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                     <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Lavender </h5>
-                                                      <h5 style="font-weight: lighter;">+10 €</h5>
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="color" id="color-gray" value="Gray">
+                                                            <label for="color-gray">Gray</label>
+                                                        </h5>
+                                                        <h5 style="font-weight: lighter;">+10 €</h5>
                                                     </div>
-                                                  </li>
-          
-                                                  <li class="list-group-item list-group-item-action border rounded">
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                     <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Red </h5>
-                                                      <h5 style="font-weight: lighter;">+10 €</h5>
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="color" id="color-orange" value="Orange">
+                                                            <label for="color-orange">Orange</label>
+                                                        </h5>
+                                                        <h5 style="font-weight: lighter;">+10 €</h5>
                                                     </div>
-                                                  </li>
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="color" id="color-green" value="Green">
+                                                            <label for="color-green">Green</label>
+                                                        </h5>
+                                                        <h5 style="font-weight: lighter;">+10 €</h5>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="color" id="color-lavender" value="Lavender">
+                                                            <label for="color-lavender">Lavender</label>
+                                                        </h5>
+                                                        <h5 style="font-weight: lighter;">+10 €</h5>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="color" id="color-red" value="Red">
+                                                            <label for="color-red">Red</label>
+                                                        </h5>
+                                                        <h5 style="font-weight: lighter;">+10 €</h5>
+                                                    </div>
+                                                </li>
                                             </div>
                                         </div>
-        
-                                        <div class="border-top"> <!--  Clavier  -->
+                                    
+                                        <!-- Clavier -->
+                                        <div class="border-top">
                                             <div class="row">
-                                                <div class="col-11">                                        
+                                                <div class="col-11">
                                                     <h3 class="mt-4">Clavier</h3>
                                                     <p>Choisissez une option</p>
                                                 </div>
                                                 <div class="col-1">
                                                     <span class="material-symbols-outlined pt-4 mt-3">keyboard_arrow_up</span>
                                                 </div>
-                                            </div>    
+                                            </div>
                                             <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> French </h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> German </h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Japanese </h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action  border rounded" aria-current="true">
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                     <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> US English </h5>
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="keyboard" id="keyboard-french" value="French">
+                                                            <label for="keyboard-french">French</label>
+                                                        </h5>
                                                     </div>
-                                                  </li>
-          
-                                                  <li class="list-group-item list-group-item-action border rounded">
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                     <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> British English </h5>
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="keyboard" id="keyboard-german" value="German">
+                                                            <label for="keyboard-german">German</label>
+                                                        </h5>
                                                     </div>
-                                                  </li>
-          
-                                                  <li class="list-group-item list-group-item-action border rounded">
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
                                                     <div class="d-flex w-100 justify-content-between">
-                                                      <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> International English </h5>
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="keyboard" id="keyboard-japanese" value="Japanese">
+                                                            <label for="keyboard-japanese">Japanese</label>
+                                                        </h5>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 the="mb-1">
+                                                            <input type="radio" name="keyboard" id="keyboard-us-english" value="US English">
+                                                            <label for="keyboard-us-english">US English</label>
+                                                        </h5>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="keyboard" id="keyboard-british-english" value="British English">
+                                                            <label for="keyboard-british-english">British English</label>
+                                                        </h5>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="keyboard" id="keyboard-international-english" value="International English">
+                                                            <label for="keyboard-international-english">International English</label>
+                                                        </h5>
                                                     </div>
                                                 </li>
                                             </div>
                                         </div>
-        
-                                        <div class="border-top">  <!--  Chargeur  -->
+                                    
+                                        <!-- Chargeur -->
+                                        <div class="border-top">
                                             <div class="row">
-                                                <div class="col-11">                                        
+                                                <div class="col-11">
                                                     <h3 class="mt-4">Chargeur</h3>
                                                     <p>Choisissez une option</p>
                                                 </div>
                                                 <div class="col-1">
                                                     <span class="material-symbols-outlined pt-4 mt-3">keyboard_arrow_up</span>
                                                 </div>
-                                            </div>    
-                                            <div class="list-group gap-3">
-                                                <li class="list-group-item list-group-item-action active border rounded" aria-current="true">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Power Adapter - 60W - EU </h5>
-                                                    <h5 style="font-weight: lighter;">+49 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Power Adapter - 60W - UK </h5>
-                                                    <h5 style="font-weight: lighter;">+49 €</h5>
-                                                  </div>
-                                                </li>
-        
-                                                <li class="list-group-item list-group-item-action border rounded">
-                                                  <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1"><span class="material-symbols-outlined">radio_button_unchecked</span> Aucun (apportez le vôtre) </h5>
-        
-                                                  </div>
-                                                </li>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                            <div class="list-group gap-3">
+                                                <li class="list-group-item list-group-item-action border rounded" onclick="selectProduct(this)">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h5 class="mb-1">
+                                                            <input type="radio" name="charger" id="charger-60w-eu" value="Power Adapter - 60W - EU">
+                                                            <label for="charger-60w-eu">Power Adapter - 60W - EU</label>
+                                                        </h5>
+                                                        <h5 style="font-weight: lighter;">+49 €</h5>
+                                                    </div>
+                                    
         
                                 <div class="mt-4 pt-4"> <!--  Personnalisation  -->
                                     <h1>Cartes d'extension</h1>
