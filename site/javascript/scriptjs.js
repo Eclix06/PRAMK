@@ -81,23 +81,17 @@ function quickSelectBundle() {
   });
 }
 
-// Function to update the active class based on the select value
-function updateActiveState(select) {
-  const listItem = select.closest('.list-group-item');
-  // Add or remove the 'active' class based on the value
-  if (parseInt(select.value, 10) > 0) {
-      listItem.classList.add('active');
-  } else {
-      listItem.classList.remove('active');
-  }
-}
-
+// Initialisation du prix total
 let totalPrice = 0;
 
-// Function to update the cart based on the selected option
+// Fonction pour mettre à jour le total
 function updateCart(selectedOption) {
+  // Récupérer le prix de l'option sélectionnée
   const optionPrice = parseFloat(selectedOption.getAttribute('data-price'));
+
+  // Mettre à jour le prix total
   totalPrice = optionPrice;
 
-  document.getElementById('prixTotal').innerText = `Panier: ${totalPrice.toFixed(2)}€`;
+  // Afficher le prix total dans l'élément avec l'ID prixTotal
+  document.getElementById('prixTotal').innerText = 'Total: ${totalPrice.toFixed(2)}€';
 }
