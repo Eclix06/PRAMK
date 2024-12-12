@@ -434,6 +434,14 @@ h6 {
     color: #000;
 }
 
+.selection-quantite {
+    position: absolute;
+    right: 20%;
+}
+
+.list-group-item {
+    position: relative;
+}
 
 @media (max-width: 768px) {
     .footer-container {
